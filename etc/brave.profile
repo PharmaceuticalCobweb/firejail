@@ -5,14 +5,8 @@ include /etc/firejail/brave.local
 # Persistent global definitions
 include /etc/firejail/globals.local
 
-noblacklist ~/.config/brave
-# brave uses gpg for built-in password manager
-noblacklist ~/.gnupg
-noblacklist ~/.pki
-
 include /etc/firejail/disable-common.inc
 include /etc/firejail/disable-devel.inc
-include /etc/firejail/disable-programs.inc
 
 mkdir ~/.config/brave
 mkdir ~/.pki
@@ -21,6 +15,7 @@ whitelist ~/.config/KeePass
 whitelist ~/.config/brave
 whitelist ~/.config/keepass
 whitelist ~/.config/lastpass
+whitelist ~/.gnupg
 whitelist ~/.keepass
 whitelist ~/.lastpass
 whitelist ~/.pki

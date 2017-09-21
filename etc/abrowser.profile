@@ -5,13 +5,8 @@ include /etc/firejail/abrowser.local
 # Persistent global definitions
 include /etc/firejail/globals.local
 
-noblacklist ~/.cache/mozilla
-noblacklist ~/.mozilla
-noblacklist ~/.pki
-
 include /etc/firejail/disable-common.inc
 include /etc/firejail/disable-devel.inc
-include /etc/firejail/disable-programs.inc
 
 mkdir ~/.cache/mozilla/abrowser
 mkdir ~/.mozilla

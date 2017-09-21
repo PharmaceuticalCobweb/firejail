@@ -8,14 +8,9 @@ include /etc/firejail/globals.local
 blacklist ~/.Xauthority
 blacklist ~/.bashrc
 
-noblacklist ~/.bibletime
-noblacklist ~/.config/qt5ct
-noblacklist ~/.sword
-
 include /etc/firejail/disable-common.inc
 include /etc/firejail/disable-devel.inc
 include /etc/firejail/disable-passwdmgr.inc
-include /etc/firejail/disable-programs.inc
 
 whitelist ${HOME}/.bibletime
 whitelist ${HOME}/.config/qt5ct
